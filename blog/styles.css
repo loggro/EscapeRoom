@@ -1,0 +1,117 @@
+/* styles.css */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.header-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Semi-transparent background for better readability */
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+main {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-entry {
+  padding: 20px;
+  margin: 20px 0;
+  border-bottom: 2px solid #eee; /* subtle separator */
+}
+
+.blog-entry:last-child {
+  border-bottom: none; /* remove separator from the last entry */
+}
+
+.blog-entry h2 {
+  color: #0275d8;
+  font-size: 24px;
+}
+
+.blog-entry h3 {
+  color: #5cb85c;
+  font-size: 18px;
+}
+
+.show-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.blog-entry:hover {
+  background-color: #f1f1f1; /* subtle hover effect */
+}
+
+.more-content {
+  display: block;
+}
+
+.read-more-btn {
+  display: none; /* Hidden by default */
+  background-color: #0275d8;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.read-more-btn:hover {
+  background-color: #025aa5;
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 95%;
+  }
+
+  .header-title {
+    font-size: 20px; /* Adjust size for mobile */
+  }
+
+  .read-more-btn {
+    display: block; /* Show the button on mobile devices */
+  }
+
+  .more-content {
+    display: none;
+  }
+}
