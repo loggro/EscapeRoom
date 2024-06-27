@@ -65,8 +65,8 @@ main {
 }
 
 .show-image {
-  width: 100%;
   height: auto;
+  max-height: 300px;
   display: block;
   margin-bottom: 20px;
 }
@@ -113,5 +113,13 @@ p {
 
   .more-content {
     display: none;
+  }
+
+  .show-image {
+    width: 100%;
+    height: auto;
+    max-height: fit-content;
+    display: block;
+    margin-bottom: 20px;
   }
 }
